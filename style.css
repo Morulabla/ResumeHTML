@@ -1,0 +1,107 @@
+/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
+
+body {
+  margin: 0;
+    font-family: sans-serif, 'Lato';
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+    background-image: url(Pattern-6C.jpg);
+    background-size:cover;
+    background-position:center;
+   
+      
+  
+}
+
+header section {
+  margin: 0 auto;
+}
+
+header img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+}
+
+h1 {
+  margin: 1em 0;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 200;
+    
+
+}
+section {
+   
+}
+main {
+  max-width: 1140px;
+}
+
+.course {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course .title {
+    flex: 0 0 33.3%;
+    max-width: 33%;
+    font-weight: 600;
+    color: indianred;
+}
+
+.course .descrition {
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+}
+
+.course .descrition p {
+    padding-left: 1em;
+}
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.list{
+    list-style-type: none;
+}
+.school span {
+  color: #A7B8BF;
+}
+
+footer {
+ padding: 1em;
+}
