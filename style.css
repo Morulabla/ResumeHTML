@@ -3,7 +3,38 @@
 body {
   margin: 0;
     font-family: sans-serif, 'Lato';
+    background-image: url(chmurka1.png),url(chmurka2.png), url(chmurka3.png), url(t%C5%82o.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat:repeat-x;
+     background-position: 
+        0 120%,
+        0 130%,
+        0 140%,
+        0% 0%,
+        0 0;
+    background-size: 
+        30% ,
+        20%,
+        20% ,
+        contain,
+        0px 0px;
+    animation: 50s para infinite linear;
+
 }
+
+@keyframes para {
+    100% {
+        background-position: 
+            300px 120%,
+           1000px 130%,
+            500px 140%,
+            0px 0%,
+            0px 0;
+        }
+    }
+
+
 
 article {
   padding:0 1em;
@@ -21,12 +52,6 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-    background-image: url(Pattern-6C.jpg);
-    background-size:cover;
-    background-position:center;
-   
-      
-  
 }
 
 header section {
@@ -34,55 +59,94 @@ header section {
 }
 
 header img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    
+    
+   
    
 }
 
 h1 {
-  margin: 1em 0;
+  margin: 0,5em 0;
+    margin-bottom: inherit;
     color: white;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px black;
 }
 h3{
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 500;
     
 
+}
+
+h4 {
+    margin-top:0;
 }
 section {
    
 }
 main {
   max-width: 1140px;
+
 }
+
+
 
 .course {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
 }
 
 .course .title {
     flex: 0 0 33.3%;
     max-width: 33%;
     font-weight: 600;
-    color: indianred;
+    color: darkblue;
+    
 }
 
-.course .descrition {
+.course .description {
+    flex: 0 0 66.6%;
+    max-width: 66%;
+    
+   
+}
+
+.experience {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items:baseline;
+}
+
+.experience .title {
+    flex: 0 0 33.3%;
+    max-width: 33%;
+    font-weight: 600;
+    
+    
+    
+}
+.experience .description {
     flex: 0 0 66.6%;
     max-width: 66.6%;
 }
 
-.course .descrition p {
-    padding-left: 1em;
+
+.experience span{
+     flex: 0 0 33.3%;
+    max-width: 33%;
+    font-weight: 600;
+    color: darkblue;
 }
+
 .skills {
   display: -ms-flexbox;
   display: flex;
@@ -90,17 +154,43 @@ main {
   flex-wrap: wrap;
 }
 
+
+
 .skills .column {
   -ms-flex: 0 0 50%%;
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 .list{
     list-style-type: none;
 }
-.school span {
-  color: #A7B8BF;
+
+
+.school {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: baseline;
+   
 }
+
+
+.school span {
+    flex: 0 0 33.3%;
+    max-width: 33%;
+    font-weight: 600;
+    color: darkblue;
+   
+}
+
+.school .description {
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+    
+}
+
 
 footer {
  padding: 1em;
